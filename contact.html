@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="ATIF-logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        #contactus {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .contact-form button {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: linear-gradient(135deg, #ff758c, #ff5252);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"> <div class="logo">
+                <img src="ATIF-logo.jpg"
+                    alt="Atif Logo" >
+                <span>Prodmast</span>
+            </div></a>
+            <ul>
+                <li><a href="about me .html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#signup" class="signup-btn">Sign Up</a>
+        </nav>
+    </header>
+    <section id="contactus">
+        <div class="container">
+            <h1 class="title">Contact Us</h1>
+            <p style="color: rgba(255, 255, 255, 0.8);">We'd love to hear from you! Fill out the form below and we'll
+                get
+                back to you as soon as possible.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <section id="feet">
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#"><img
+                        src="https://assets1.flashfunders.com/offering/details/3f94027e-c889-4c51-b898-f3df69294218/ATIF-logo.jpg"
+                        alt="ATIF Logo"></a>
+                <div id="logo-text">
+                    <h1>Prodmast</h1>
+                </div>
+
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Newsroom</a>
+                    <a href="#">Events</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Industries</h3>
+                    <a href="#">Precision Metalforming</a>
+                    <a href="#">Industrial Manufacturing</a>
+                    <a href="#">High Tech & Electronics</a>
+                    <a href="#">Aerospace</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <a href="#">Manufacturing Execution System</a>
+                    <a href="#">Enterprise Resource Planning</a>
+                    <a href="#">Quality Management System</a>
+                    <a href="#">Supply Chain Planning</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <p>hallo@prodmast.com</p>
+                    <div class="social-icons">
+                        <a href="#" title="LinkedIn">🔗</a>
+                        <a href="#" title="YouTube">📺</a>
+                        <a href="#" title="Facebook">📘</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Prodmast, All rights reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy
+                    Policy</a></p>
+        </div>
+    </section>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            alert("Theme toggled! (Feature not fully implemented yet.)");
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const footer = document.querySelector(".footer");
+            const footerColumns = document.querySelectorAll(".footer-column");
+
+            function checkScroll() {
+                const footerPosition = footer.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+
+                if (footerPosition < screenHeight - 50) {
+                    footer.classList.add("visible");
+                    footerColumns.forEach((column, index) => {
+                        column.style.transitionDelay = `${index * 0.2}s`;
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();
+        });
+    </script>
+</body>
+
+</html>

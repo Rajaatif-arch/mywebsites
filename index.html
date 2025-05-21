@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="ATIF-logo.jpg" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: #222;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        nav .logo img {
+            height: 60px;
+            margin-right: -16px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        nav .logo span {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #d32f35e8;
+            margin: -9px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        nav ul li:hover {
+            background: #444;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        .signup-btn {
+            background: #ff5722;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .signup-btn:hover {
+            background: #e64a19;
+        }
+
+        /* hero section start */
+
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background: #c3c8c6;
+            color: black;
+        }
+
+        h1 {
+            font-size: xxx-large;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* boxs */
+        #list-box {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        #box {
+            /* background: #ff5722; */
+            margin: 10px;
+            animation: animate 1s infinite;
+            /* border: 1px solid #f88989; */
+        }
+
+        .box1 {
+            width: 252px;
+            height: 306px;
+            background: url('1.jpg') no-repeat center center/cover;
+            border-radius: 22px;
+
+        }
+
+        .box2 {
+            width: 209px;
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            background-color: #163236;
+            color: white;
+            line-height: 1.6;
+            border-radius: 22px;
+
+        }
+
+
+        .box2 p big {
+            font-size: 43px;
+        }
+
+        .box3 p big {
+            font-size: 43px;
+        }
+
+        .box3 p {
+            padding: 0 11px;
+            color: black;
+        }
+
+        .box4 p big {
+            font-size: 43px;
+        }
+
+        .box4 p {
+            padding: 0 11px;
+            color: black;
+        }
+
+        .box5 p {
+            padding: 0 11px;
+
+        }
+
+        /* box2 shrong */
+
+        .box3 {
+            width: 337px;
+            height: 229px;
+            background: #cccccc;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            font-size: larger;
+            color: white;
+            line-height: 1.6;
+            text-align: left;
+            border-radius: 17px;
+
+        }
+
+        .box4 {
+            width: 209px;
+            height: 260px;
+            background: #b3ca9c;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            font-size: larger;
+            color: white;
+            line-height: 1.6;
+            text-align: left;
+            border-radius: 28px 0px 3px 28px;
+        }
+
+        .box5 {
+            width: 252px;
+            height: 306px;
+            background: #102526;
+            display: flex;
+            /* justify-content: center; */
+            align-items: end;
+            font-size: larger;
+            color: white;
+            line-height: 1.6;
+            text-align: left;
+            border-radius: 28px 0px 3px 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff5722;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #e64a19;
+        }
+
+        /* end */
+        section {
+            padding: 50px;
+            text-align: center;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* about section start */
+        #about {
+            background: #0e2a2e;
+            color: white;
+        }
+
+        #about h2 {
+            font-size: xx-large;
+        }
+
+        #projuct-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            gap: 1;
+        }
+
+        #project-box {
+            width: 395px;
+            border-radius: 4%;
+            height: 245px;
+            gap: 1;
+            background: #153134;
+            margin: 31px;
+            animation: animate 1s infinite;
+            /* border: 1px solid #f88989; */
+        }
+
+
+        /* project h4 */
+        #project-box h4 {
+            font-size: 20px;
+            margin: -10px 0px;
+            padding: 0;
+            color: white;
+        }
+
+        #project-box div {
+            padding: 6px;
+        }
+
+        /* projuct logo */
+        #project-box img {
+            width: 53px;
+            height: 47px;
+            margin-top: 20px;
+        }
+
+        .project-box1 {
+            padding: 0 8px;
+            flex-direction: column;
+            /* background: #ff5722; */
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .project-box2 {
+            padding: 0 8px;
+            flex-direction: column;
+            /* background: #ff5722; */
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .project-box3 {
+            padding: 0 8px;
+            flex-direction: column;
+            background: #ff5722;
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .project-box4 {
+            padding: 0 8px;
+            flex-direction: column;
+            /* background: #ff5722; */
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .project-box5 {
+            padding: 0 8px;
+            flex-direction: column;
+            /* background: #ff5722; */
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        .project-box6 {
+            padding: 0 8px;
+            flex-direction: column;
+            /* background: #ff5722; */
+            display: flex;
+            justify-content: space-between;
+            text-align: justify;
+        }
+
+        /* benfit start */
+        #services {
+            background: #f4f4f4;
+            color: black;
+            display: flex;
+        }
+
+        #benfit-img img {
+            flex: 1;
+            padding: 50px;
+            text-align: center;
+            background: #0d6042;
+            color: black;
+            border-radius: 6%;
+            height: 503px;
+        }
+
+        #benfit-box {
+            flex: 1;
+            padding: 50px;
+            text-align: center;
+            background: #f4f4f4;
+            color: black;
+            line-height: 1.6;
+            /* background: #0d6042; */
+        }
+
+        #benfit-box h4 {
+            font-size: xx-large;
+            margin: 0;
+        }
+
+        #logo-benfit {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        #logo-benfit h5 {
+            font-size: 16px;
+        }
+
+        #para-benfit {
+            text-align: left;
+            margin: -26px 64px;
+        }
+
+        #para-benfit p {
+            margin: 4px;
+        }
+
+        #logo-benfit img {
+            height: 24px;
+        }
+
+        /* end */
+        /* price section start */
+        #price {
+            background: black;
+            color: aliceblue;
+        }
+
+        .pricing-container {
+            padding: 40px;
+            margin: -48px;
+        }
+
+        .pricing-container h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-container p {
+            font-size: 21px;
+            color: #b3b3b3;
+            margin: 22px;
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: center;
+            gap: 44px;
+            margin-top: 50px;
+        }
+
+        .plan {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            width: 373px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+            /* margin: 0 17px; */
+        }
+
+        .plan:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan h3 {
+            font-size: 22px;
+            margin: 0;
+        }
+
+        h2 span {
+            font-size: 16px;
+            color: #b3b3b3;
+        }
+
+        .plan button {
+            background-color: transparent;
+            border: 2px solid #32cd32;
+            color: #32cd32;
+            padding: 11px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #32cd32;
+            color: #0d0d0d;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .plan ul li {
+            font-size: 14px;
+            padding: 8px 0;
+        }
+
+        .professional-plan {
+            background-color: #004d40;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            width: 829px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .professional-plan h3 {
+
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: -16px;
+            background: linear-gradient(90deg, #32cd32, #00ffcc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 0px 10px rgba(50, 205, 50, 0.5);
+            letter-spacing: 1px;
+        }
+
+
+
+        /* for professional plan button */
+        .get-started-btn {
+            background-color: #1a1a1a;
+            border: 2px solid #32cd32;
+            color: #32cd32;
+            padding: 14px 28px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            /* margin-top: 20px; */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .get-started-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, #32cd32, transparent);
+            transition: all 0.5s;
+            z-index: -1;
+        }
+
+        .get-started-btn:hover::before {
+            left: 100%;
+        }
+
+        .get-started-btn:hover {
+            background-color: #32cd32;
+            color: #0d0d0d;
+            box-shadow: 0px 0px 20px rgba(50, 205, 50, 0.8);
+        }
+
+        /* end */
+        /* start the intergateed selection  */
+        .integration-section {
+            display: flex;
+            align-items: center;
+            /* max-width: 1000px; */
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            gap: 158px;
+        }
+
+        .text-content {
+            flex: 0.7;
+            padding-right: 40px;
+            text-align: start;
+        }
+
+        .text-content h2 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .work-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background: #d4ffcc;
+            color: #222;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .work-btn:hover {
+            background: #b6ff99;
+        }
+
+        .icon-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 19px;
+            justify-content: center;
+            align-items: center;
+            background: #eaffd6;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .icon-grid a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .icon-grid a:hover {
+            transform: scale(1.2);
+        }
+
+        .icon-grid img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .service-item {
+            margin: 15px;
+            padding: 10px;
+            background: #ddd;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        /* the fast track section start */
+        #fasttrack {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            background-color: #0d1b1e;
+            font-family: Arial, sans-serif;
+        }
+
+        .fast-track {
+            text-align: center;
+            padding: 50px;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fast-track h2 {
+            font-size: 28px;
+            color: #fff;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            position: relative;
+            animation: slideInLeft 1.5s ease-in-out 0.4s forwards;
+            opacity: 0;
+        }
+
+        .fast-track p {
+            font-size: 16px;
+            color: #ccc;
+            margin-top: 10px;
+            opacity: 0;
+            animation: slideInLeft 1.5s ease-in-out 0.4s forwards;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .work-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #d4ffcc, #a8ff78);
+            color: #222;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(164, 255, 146, 0.4);
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: slideInRight 1.5s ease-in-out 0.4s forwards;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .work-btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: all 0.4s ease-in-out;
+        }
+
+        .work-btn:hover::after {
+            left: 100%;
+        }
+
+        .work-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(164, 255, 146, 0.6);
+        }
+
+        .work-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* for footer start */
+        #feet {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1b1e;
+            color: #ccc;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #111;
+            flex-wrap: wrap;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .footer.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .footer-logo img {
+            width: 143px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .footer-logo img:hover {
+            transform: scale(1.1);
+        }
+
+        #logo-text {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #d32f35e8;
+            margin: -9px;
+            cursor: pointer;
+        }
+
+        .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-column {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease-out 0.5s, transform 0.8s ease-out 0.5s;
+        }
+
+        .footer.visible .footer-column {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .footer-column h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 8px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-column a:hover {
+            color: #a8ff78;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 24px;
+            color: #ccc;
+            transition: transform 0.3s ease-in-out, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #a8ff78;
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            background-color: #0a0a0a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+           <a href="index.html"> <div class="logo">
+                <img src="ATIF-logo.jpg"
+                    alt="Atif Logo" >
+                <span>Prodmast</span>
+            </div></a>
+            <ul>
+                <li><a href="about me .html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#signup" class="signup-btn">Sign Up</a>
+        </nav>
+        <div class="hero">
+            <h1>The Future of Manufacturing with Latest Technology</h1>
+            <p>Expert tech to elevate your manufacturing. Let's take your business further.</p>
+            <a href="#contact" class="btn">Get Started</a>
+            <a href="#demo" class="btn">Demo</a>
+            <div id="list-box">
+                <div id="box" class="box1">
+                    <img src="1.jpgs" alt="">
+                </div>
+                <div id="box" class="box2">
+                    <p> <big>100+ </big> <br> Our Esteemed <br> Clients and Partners </p>
+                </div>
+                <div id="box" class="box3">
+                    <p>Total Projects ON <br>
+                        <big>1951+ </big> <br>
+                        Increase of 125 this month
+                    </p>
+                </div>
+                <div id="box" class="box4">
+                    <p><big>6+</big> <br>
+                        Years of <br> Dedicated Service </p>
+                </div>
+                <div id="box" class="box5">
+                    <p>Achieve Optimal <br> Efficiency and Boost <br> Productivity</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>Efficient and Integrated <br>Manufacturing Services</h2>
+        <p>Simplify operations with our efficient, quality-focused services .</p>
+        <div id="projuct-box">
+            <div id="project-box" class="project-box1">
+                <img src="cpu.png" alt="">
+                <div>
+                    <h4>Production and Assembly </h4>
+                    <p>Details on production processes, assembly, <br> capacity, and product types</p>
+                </div>
+
+            </div>
+            <div id="project-box" class="project-box2">
+                <img src="document.png" alt="">
+                <div>
+                    <h4>Custom Manufacturing </h4>
+                    <p>Custom product creation with design <br>and customization options</p>
+                </div>
+
+            </div>
+            <div id="project-box" class="project-box3">
+                <img src="forward.png" alt="">
+                <div>
+                    <h4>Quality Control </h4>
+                    <p>Procedures and systems in place to ensure <br> high product quality</p>
+                </div>
+
+            </div>
+            <div id="project-box" class="project-box4">
+                <img src="note.png" alt="">
+                <div>
+                    <h4>Technology and Innovation </h4>
+                    <p>Details on the latest manufacturing <br> technologies and ongoing innovations</p>
+                </div>
+
+            </div>
+            <div id="project-box" class="project-box5">
+                <img src="pin.png" alt="">
+                <div>
+                    <h4>Packaging and Logistics </h4>
+                    <p>Packaging and logistics for shipping <br> to customers and distributors</p>
+                </div>
+
+            </div>
+            <div id="project-box" class="project-box6">
+                <img src="time.png" alt="">
+                <div>
+                    <h4>Consulting Market Research </h4>
+                    <p>Services to help companies understand market <br> needs and provide strategic advice</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div id="benfit-img">
+            <img src="range.avif" alt="">
+        </div>
+        <div id="benfit-box">
+            <h4>Key Benefits of Our System for Your Business Efficiency </h4>
+            <p>Our systems boost productivity, cut costs, and drive business growth </p>
+            <div class="serive-benfit">
+                <div id="logo-benfit"><img src="checked.png" alt="" id="Logo">
+                    <h5>Our systems boost productivity, cut costs, and drive business growth </h5>
+                </div>
+                <div id="para-benfit">
+                    <p>With advanced technology, we help you achieve top product quality Discover how we can enhance
+                        your standards </p>
+                </div>
+            </div>
+            <div class="serive-benfit">
+                <div id="logo-benfit"><img src="checked.png" alt="" id="Logo">
+                    <h5>Our systems boost productivity, cut costs, and drive business growth </h5>
+                </div>
+                <div id="para-benfit">
+                    <p>With advanced technology, we help you achieve top product quality Discover how we can enhance
+                        your standards </p>
+                </div>
+            </div>
+            <div class="serive-benfit">
+                <div id="logo-benfit"><img src="checked.png" alt="" id="Logo">
+                    <h5>Our systems boost productivity, cut costs, and drive business growth </h5>
+                </div>
+                <div id="para-benfit">
+                    <p>With advanced technology, we help you achieve top product quality Discover how we can enhance
+                        your standards </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price">
+        <div class="pricing-container">
+            <h2>Tailored Plans for Your<br> Manufacturing Scale</h2>
+            <p>Flexible pricing for any business size.</p>
+
+            <div class="pricing-plans">
+                <div class="plan">
+                    <h3>Starter</h3>
+                    <p>This package offers the basic features you need to get started.</p>
+                    <h2>$39 <span>/ month</span></h2>
+                    <button>Get Started</button>
+                    <ul>
+                        <li>✔ Initial setup guide</li>
+                        <li>✔ 24/7 technical support</li>
+                        <li>✔ Access the production dashboard</li>
+                        <li>✔ Production up to 10,000 units per month</li>
+                    </ul>
+                </div>
+
+                <div class="plan">
+                    <h3>Enterprise</h3>
+                    <p>This package provides full access to all premium features.</p>
+                    <h2>$99 <span>/ month</span></h2>
+                    <button>Get Started</button>
+                    <ul>
+                        <li>✔ Unlimited production units</li>
+                        <li>✔ Dedicated account manager</li>
+                        <li>✔ Tailored manufacturing solutions</li>
+                        <li>✔ Predictive production optimization</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="professional-plan">
+                <h3>Professional</h3>
+                <p>Designed for greater flexibility, this solution offers <br> advanced tools for custom tailoring to
+                    your
+                    needs.</p>
+                <button class="get-started-btn">Get Started</button>
+            </div>
+        </div>
+
+    </section>
+    <section id="intergateed">
+        <div class="integration-section">
+            <div class="text-content">
+                <h2>Empowering Top Companies with Seamless Integrations</h2>
+                <p>Experience seamless connections with our innovative solutions, designed to effortlessly integrate
+                    with your existing systems, enhance productivity, and drive your business towards greater success.
+                </p>
+                <button class="work-btn">Work With Us</button>
+            </div>
+            <div class="icon-grid">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/732/732026.png" alt="HTML5 Icon"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="CSS3 Icon"></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Icon"></a>
+                <a href="https://react.dev/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="React Icon"></a>
+                <a href="https://nodejs.org/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="Node.js Icon"></a>
+                <a href="https://www.mongodb.com/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/919/919830.png" alt="MongoDB Icon"></a>
+                <a href="https://www.python.org/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968525.png" alt="Python Icon"></a>
+                <a href="https://www.php.net/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="PHP Icon"></a>
+                <a href="https://www.mysql.com/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968708.png" alt="MySQL Icon"></a>
+                <a href="https://firebase.google.com/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5969/5969059.png" alt="Firebase Icon"></a>
+                <a href="https://git-scm.com/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png" alt="Git Icon"></a>
+                <a href="https://aws.amazon.com/" target="_blank"><img
+                        src="https://cdn-icons-png.flaticon.com/512/5969/5969051.png" alt="AWS Icon"></a>
+            </div>
+        </div>
+    </section>
+    <section id="fasttrack">
+        <div class="fast-track">
+            <h2>Fast-Track Your Success</h2>
+            <p>Accelerate your growth with our cutting-edge solutions. Minimize downtime and maximize efficiency. Get
+                started today!</p>
+            <a href="#" class="work-btn">Start Now</a>
+        </div>
+    </section>
+    <section id="feet">
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#"><img
+                        src="https://assets1.flashfunders.com/offering/details/3f94027e-c889-4c51-b898-f3df69294218/ATIF-logo.jpg"
+                        alt="ATIF Logo"></a>
+                <div id="logo-text">
+                    <h1>Prodmast</h1>
+                </div>
+
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Newsroom</a>
+                    <a href="#">Events</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Industries</h3>
+                    <a href="#">Precision Metalforming</a>
+                    <a href="#">Industrial Manufacturing</a>
+                    <a href="#">High Tech & Electronics</a>
+                    <a href="#">Aerospace</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <a href="#">Manufacturing Execution System</a>
+                    <a href="#">Enterprise Resource Planning</a>
+                    <a href="#">Quality Management System</a>
+                    <a href="#">Supply Chain Planning</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <p>hallo@prodmast.com</p>
+                    <div class="social-icons">
+                        <a href="#" title="LinkedIn">🔗</a>
+                        <a href="#" title="YouTube">📺</a>
+                        <a href="#" title="Facebook">📘</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Prodmast, All rights reserved | <a href="#">Terms & Conditions</a> | <a href="#">Privacy
+                    Policy</a></p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const footer = document.querySelector(".footer");
+            const footerColumns = document.querySelectorAll(".footer-column");
+
+            function checkScroll() {
+                const footerPosition = footer.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+
+                if (footerPosition < screenHeight - 50) {
+                    footer.classList.add("visible");
+                    footerColumns.forEach((column, index) => {
+                        column.style.transitionDelay = `${index * 0.2}s`;
+                    });
+                }
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();
+        });
+    </script>
+</body>
+
+</html>
